@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SERCS — Smart Emergency Response & Crisis Coordination</title>
+  <meta name="description" content="Real-time emergency coordination system for the hospitality industry. Detect, alert, coordinate, and resolve crises faster." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="nav-brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+      SERCS
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#features">Features</a>
+      <a href="#tech-stack">Tech Stack</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#problem">Problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#features">Features</a>
+    <a href="#tech-stack">Tech Stack</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <img src="hero-bg.jpg" alt="" class="hero-bg" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      <span>Real-Time Crisis Detection and Coordination for Hospitality</span>
+    </div>
+    <h1>Smart Emergency Response System</h1>
+    <p class="hero-desc">A centralized platform that detects, alerts, and coordinates emergency responses across hospitality venues — keeping guests and staff safe in real time.</p>
+    <a href="#solution" class="btn-primary emergency-glow">View System</a>
+  </div>
+  <a href="#problem" class="scroll-arrow">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+  </a>
+</section>
+
+<!-- PROBLEM -->
+<section class="section" id="problem">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">The Challenge</span>
+      <h2>Why Current Systems Fail</h2>
+      <p class="section-sub">Hospitality emergency response relies on fragmented tools and manual processes that put lives at risk.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Delayed Communication</h3>
+        <p>Manual channels like phone calls and walkie-talkies cause critical delays, leaving staff scrambling during emergencies.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h3>No Centralized System</h3>
+        <p>Hotels lack a unified platform to coordinate between departments, management, and external emergency responders.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h3>Guest Confusion</h3>
+        <p>Guests are often left uninformed during emergencies with no clear instructions, increasing panic and risk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVE -->
+<section class="section section-dark" id="objective">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">Our Mission</span>
+      <h2 class="text-white">What We Aim to Achieve</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card-dark">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <p>Instant detection of emergencies through a one-tap trigger accessible on any device.</p>
+      </div>
+      <div class="card-dark">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+        <p>Real-time alerts pushed simultaneously to security, management, and responders.</p>
+      </div>
+      <div class="card-dark">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+        <p>Centralized coordination through a live dashboard for monitoring and task assignment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section" id="solution">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">Our Approach</span>
+      <h2>How the System Works</h2>
+      <p class="section-sub">A simple three-step flow from detection to resolution.</p>
+    </div>
+    <div class="grid-3">
+      <div class="step-card">
+        <div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <span class="step-num">Step 01</span>
+        <h3>Emergency Button Trigger</h3>
+        <p>A guest or staff member presses the emergency button on the app, instantly sending an alert to the backend.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+        <span class="step-num">Step 02</span>
+        <h3>Backend Processing</h3>
+        <p>The server classifies the emergency type and severity, then routes notifications to the right responders.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
+        <span class="step-num">Step 03</span>
+        <h3>Real-Time Dashboard Updates</h3>
+        <p>Admins see live updates on the dashboard — incident status, responder locations, and resolution progress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW -->
+<section class="section section-dark" id="workflow">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">Process</span>
+      <h2 class="text-white">How It Works</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <div class="timeline-item"><div class="timeline-dot">01</div><div><h3>Emergency Detected</h3><p>A guest or staff member triggers an emergency alert through the app or physical button.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot">02</div><div><h3>Alert Dispatched</h3><p>The system classifies the emergency and sends real-time notifications to relevant responders.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot">03</div><div><h3>Team Coordination</h3><p>Response teams are assigned tasks, receive location data, and communicate via the platform.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot">04</div><div><h3>Live Monitoring</h3><p>Admins track the situation through a dashboard showing status, resources, and timelines.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot">05</div><div><h3>Resolution & Report</h3><p>Once resolved, the system logs the incident and generates a detailed report for review.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="section" id="architecture">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">System Design</span>
+      <h2>Architecture Overview</h2>
+      <p class="section-sub">Four core components working together for seamless emergency coordination.</p>
+    </div>
+    <div class="grid-4">
+      <div class="card card-sm">
+        <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <h3>Guest Interface</h3>
+        <p>Mobile-friendly web app where guests and staff can trigger emergency alerts instantly.</p>
+      </div>
+      <div class="card card-sm">
+        <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+        <h3>Backend (Node.js)</h3>
+        <p>Express server handling alert classification, routing, and real-time communication via Socket.io.</p>
+      </div>
+      <div class="card card-sm">
+        <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg></div>
+        <h3>Firebase Database</h3>
+        <p>Cloud-hosted database storing incidents, user data, response logs, and analytics in real time.</p>
+      </div>
+      <div class="card card-sm">
+        <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></div>
+        <h3>Admin Dashboard</h3>
+        <p>Live monitoring panel for admins to track active incidents, assign tasks, and review reports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="section section-dark" id="tech-stack">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">Technologies</span>
+      <h2 class="text-white">Tech Stack</h2>
+    </div>
+    <div class="grid-4">
+      <div class="card-dark-border">
+        <h3 class="stack-cat">Frontend</h3>
+        <ul class="stack-list"><li><span class="dot"></span>HTML</li><li><span class="dot"></span>CSS</li><li><span class="dot"></span>JavaScript</li></ul>
+      </div>
+      <div class="card-dark-border">
+        <h3 class="stack-cat">Backend</h3>
+        <ul class="stack-list"><li><span class="dot"></span>Node.js</li><li><span class="dot"></span>Express.js</li></ul>
+      </div>
+      <div class="card-dark-border">
+        <h3 class="stack-cat">Database</h3>
+        <ul class="stack-list"><li><span class="dot"></span>Firebase Realtime DB</li><li><span class="dot"></span>Cloud Firestore</li></ul>
+      </div>
+      <div class="card-dark-border">
+        <h3 class="stack-cat">Deployment</h3>
+        <ul class="stack-list"><li><span class="dot"></span>Vercel</li><li><span class="dot"></span>Render</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">Capabilities</span>
+      <h2>Core Features</h2>
+      <p class="section-sub">Purpose-built tools for every stage of emergency response.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card feature-card">
+        <div class="feature-bar"></div>
+        <div class="card-icon-lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Emergency Button</h3>
+        <p>One-tap emergency trigger accessible from any device for instant alert dispatch.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-bar"></div>
+        <div class="card-icon-lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+        <h3>Real-Time Alerts</h3>
+        <p>Push notifications and in-app alerts sent simultaneously to all relevant responders.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-bar"></div>
+        <div class="card-icon-lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
+        <h3>Live Dashboard</h3>
+        <p>Real-time overview of active incidents, team status, and resource allocation.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-bar"></div>
+        <div class="card-icon-lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Response Tracking Timer</h3>
+        <p>Track response duration from detection to resolution with live timestamps and audit logs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="section section-dark" id="advantages">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">Benefits</span>
+      <h2 class="text-white">Why This System Matters</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card-dark-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary shrink-0"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><p>Up to 70% faster emergency response times through automated alerting.</p></div>
+      <div class="card-dark-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary shrink-0"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><p>Seamless coordination between departments, staff, and external responders.</p></div>
+      <div class="card-dark-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary shrink-0"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><polyline points="9 12 11 14 15 10"/></svg><p>Enhanced safety protocols with structured, auditable response workflows.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIMITATIONS -->
+<section class="section" id="limitations">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">Transparency</span>
+      <h2>Current Limitations</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card card-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-muted shrink-0"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><p>Requires stable internet connectivity to function at full capacity.</p></div>
+      <div class="card card-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-muted shrink-0"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg><p>Currently a prototype — further testing needed for production deployment.</p></div>
+      <div class="card card-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-muted shrink-0"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><p>Scalability beyond large hotel chains needs additional infrastructure.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE SCOPE -->
+<section class="section section-dark" id="future">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">What's Next</span>
+      <h2 class="text-white">Future Scope</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card-dark-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary shrink-0"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3 4 4.5 4.5 0 0 1-3-4"/><path d="M12 18v-3"/></svg><p>AI-powered threat detection and predictive emergency analytics.</p></div>
+      <div class="card-dark-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary shrink-0"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg><p>IoT sensor integration for smoke, flood, and intrusion detection.</p></div>
+      <div class="card-dark-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary shrink-0"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/><line x1="1" y1="1" x2="23" y2="23"/></svg><p>Smart alerts with context-aware severity escalation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container reveal">
+    <div class="section-header">
+      <span class="section-label">Get in Touch</span>
+      <h2>Contact Us</h2>
+      <p class="section-sub">Interested in implementing this system? Reach out for collaboration or inquiries.</p>
+    </div>
+    <div class="grid-3 max-w-narrow">
+      <div class="card card-sm text-center">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+        <h3>Email</h3>
+        <p>contact@sercs.dev</p>
+      </div>
+      <div class="card card-sm text-center">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3>Phone</h3>
+        <p>+1 (555) 123-4567</p>
+      </div>
+      <div class="card card-sm text-center">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Location</h3>
+        <p>Research Lab, University Campus</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-primary"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+      SERCS
+    </div>
+    <p>&copy; 2026 Smart Emergency Response &amp; Crisis Coordination System. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
